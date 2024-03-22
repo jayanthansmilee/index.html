@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>calculator</title>
+    <style>
+.buttons{
+    color: rgb(235, 45, 42);
+    width: 18%;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 40px;
+    height: 125px;
+    border-radius: 6px;
+}
+#val{
+    align-items: center;
+    font-size: 25px;
+    width: 95%;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+.bg{
+    background: #e8b1b1;
+}
+.C{
+background: red;
+color: black;
+}
+.black{
+    background: black;
+color: white;
+}
+    </style>
+</head>
+<body class="bg">
+    <div class="ce">
+        <br>
+        <br>
+    <input type="text" id="val" readonly>
+    <br>
+    <input type="button" class="buttons" value="1" onclick="val.value += 1">
+    <input type="button" class="buttons" value="2" onclick="val.value += 2">
+    <input type="button" class="buttons" value="3" onclick="val.value += 3">
+    <input type="button" class="buttons black" value="+" onclick="val.value +='+' ">
+    <br>
+    <input type="button" class="buttons"s value="4" onclick="val.value += 4">
+    <input type="button" class="buttons" value="5" onclick="val.value += 5">
+    <input type="button" class="buttons" value="6" onclick="val.value += 6">
+    <input type="button" class="buttons black" value="-" onclick="val.value += '-'">
+    <br>
+    <input type="button" class="buttons" value="7" onclick="val.value += 7">
+    <input type="button" class="buttons" value="8" onclick="val.value += 8">
+    <input type="button" class="buttons" value="9" onclick="val.value += 9">
+    <input type="button" class="buttons black" value="/" onclick="val.value += '/'">
+    <br>
+    <input type="button" class="buttons C" value="c" onclick="val.value = ''">
+    <input type="button" class="buttons" value="0" onclick="val.value += 0">
+    <input type="button" class="buttons black" value="=" onclick="val.value = eval(val.value)">
+    <input type="button" class="buttons black" value="*" onclick="val.value += '*'">
+</div>
+</body>
+</html>
